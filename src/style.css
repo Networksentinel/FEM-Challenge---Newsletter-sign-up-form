@@ -12,6 +12,11 @@
   background: var(--color-red-gradient);
 }
 
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+
 .text-preset-1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
