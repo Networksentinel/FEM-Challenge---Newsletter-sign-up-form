@@ -16,25 +16,30 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 
-<body class="font-roboto font-normal text-base leading-normal bg-white text-blue-800">
+<body class="font-roboto font-normal text-base leading-normal bg-white text-blue-800
+             md-layout-col md:items-center md:justify-center">
 
-  <div class="app-wrapper min-h-screen layout-col gap-10 items-center">
+  <div class="app-wrapper min-h-screen flex flex-col gap-10 items-center
+              md:rounded-[36px] md:w-[608px] md:h-[878px]">
 
-    <header class="app-header">
+    <header class="app-header md:w-full">
       <picture>
-        <source media="(min-width: 1440px)" srcset="/images/illustration-sign-up-desktop.svg">
-        <source media="(min-width: 768px)" srcset="/images/illustration-sign-up-tablet.svg">
-        <img class="h-[clamp(100px,75.7333vw,390px)]" src="/images/illustration-sign-up-mobile.svg" alt="">
+        <source class="w-full" 
+                media="(min-width: 1440px)" srcset="/images/illustration-sign-up-desktop.svg">
+        <source class="w-full" 
+                media="(min-width: 768px)" srcset="/images/illustration-sign-up-tablet.svg">
+        <img class="h-[clamp(100px,75.7333vw,390px)] md:w-full md:h-auto" 
+             src="/images/illustration-sign-up-mobile.svg" alt="">
       </picture>       
     </header>
 
-    <main class="layout-col gap-10 px-6 pb-11 ">
-      <div class="app-body layout-col gap-6">
+    <main class="flex flex-col gap-10 px-6 pb-11 ">
+      <div class="app-body flex flex-col gap-6">
         <h2 class="font-bold text-[2.5rem] leading-none md:text-[3.5rem]">Stay updated!</h2>
 
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-        <ul class="layout-col gap-2">
+        <ul class="flex flex-col gap-2">
           <li class="flex gap-4">
             <svg class="w-[21px] h-[21px] shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
             Product discovery and building what matters
@@ -50,8 +55,8 @@
         </ul>
       </div>
 
-      <form class="layout-col gap-6" action="#">
-        <div class="form-group_email layout-col gap-2">
+      <form class="flex flex-col gap-6" action="#">
+        <div class="form-group_email flex flex-col gap-2">
           <label class="font-bold text-[0.75rem]"
                  for="email">Email address</label>
           <input class="text-blue-800 py-4 px-6 border border-gray rounded-lg"

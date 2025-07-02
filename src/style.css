@@ -12,17 +12,18 @@
   background: var(--color-red-gradient);
 }
 
-.layout-col {
-  display: flex;
-  flex-direction: column;
-}
-
 .font-roboto {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   letter-spacing: 0px;
 }
 
+.layout-col {
+  @apply flex flex-col;
+}
+.md-layout-col {
+  @apply md:flex md:flex-col;
+}
  /*
 .text-preset-1mobile {
   font-weight: 700;
