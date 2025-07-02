@@ -21,7 +21,11 @@
   <div class="app-wrapper min-h-screen layout-col gap-10 items-center">
 
     <header class="app-header">
-      <img class="h-[clamp(100px,75.7333vw,390px)]" src="/images/illustration-sign-up-mobile.svg" alt="">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="/images/illustration-sign-up-desktop.svg">
+        <source media="(min-width: 768px)" srcset="/images/illustration-sign-up-tablet.svg">
+        <img class="h-[clamp(100px,75.7333vw,390px)]" src="/images/illustration-sign-up-mobile.svg" alt="">
+      </picture>       
     </header>
 
     <main class="layout-col gap-10 px-6 pb-11 ">
